@@ -1,15 +1,15 @@
-function Donate() {
+function Sell() {
   return (
-    <section className="donate">
+    <section className="sell">
 
-      <h2>Dona ropa y dale una segunda vida ♻️</h2>
+      <h2>Vende tus prendas y dales una nueva vida 💰</h2>
 
       <p>
-        Tu ropa puede ayudar a otras personas y contribuir
-        al cuidado del planeta.
+        Publica la ropa que ya no utilizas y conecta
+        con personas interesadas en moda sostenible.
       </p>
 
-      <form className="donate-form">
+      <form className="sell-form">
 
         <input
           type="text"
@@ -22,12 +22,12 @@ function Donate() {
         />
 
         <input
-          type="text"
-          placeholder="Ciudad"
+          type="file"
+          accept="image/*"
         />
 
         <select>
-          <option>Tipo de prendas</option>
+          <option>Categoría de prenda</option>
           <option>Camisas</option>
           <option>Camisetas</option>
           <option>Jeans</option>
@@ -37,24 +37,26 @@ function Donate() {
           <option>Accesorios</option>
         </select>
 
+
         <input
-          type="number"
-          placeholder="Cantidad de prendas"
+          type="text"
+          placeholder="Talla"
         />
 
-        <select>
-          <option>Estado de la ropa</option>
-          <option>Excelente</option>
-          <option>Muy bueno</option>
-          <option>Bueno</option>
-        </select>
+
+        <input
+          type="number"
+          placeholder="Precio sugerido"
+        />
+
 
         <textarea
-          placeholder="Comentarios adicionales"
+          placeholder="Descripción de la prenda"
         ></textarea>
 
+
         <button type="submit">
-          Enviar donación ♻️
+          Publicar prenda 💗
         </button>
 
       </form>
@@ -63,4 +65,4 @@ function Donate() {
   );
 }
 
-export default Donate;
+export default Sell;

@@ -1,41 +1,82 @@
 function Benefits() {
+
+  const benefits = [
+    {
+      icon: "♻️",
+      title: "Moda sostenible",
+      text: "Damos una segunda vida a las prendas, reduciendo residuos textiles y promoviendo un consumo más consciente."
+    },
+
+    {
+      icon: "🌈",
+      title: "Moda sin etiquetas",
+      text: "Creemos en una moda libre, inclusiva y creada para que cada persona pueda expresar su identidad."
+    },
+
+    {
+      icon: "🤝",
+      title: "Comunidad con propósito",
+      text: "Conectamos personas que compran, venden y donan ropa para generar un impacto positivo."
+    }
+  ];
+
+
   return (
+
     <section className="benefits">
 
-      <h2>¿Por qué elegir ReVístete? 🌈</h2>
+
+      <h2>
+        ¿Por qué elegir ReVístete? 🌈
+      </h2>
+
+
+      <p className="benefits-subtitle">
+        Más que ropa, creamos nuevas historias para cada prenda.
+      </p>
+
+
 
       <div className="benefits-container">
 
-        <div className="benefit-card">
-          <h3>♻️ Moda sostenible</h3>
-          <p>
-            Reducimos residuos textiles dando una segunda vida
-            a prendas que todavía pueden ser utilizadas.
-          </p>
-        </div>
+
+        {
+          benefits.map((benefit, index) => (
+
+            <div
+              className="benefit-card"
+              key={index}
+            >
+
+             <div className="benefit-icon">
+  {benefit.icon}
+</div>
 
 
-        <div className="benefit-card">
-          <h3>💰 Precios accesibles</h3>
-          <p>
-            Encuentra ropa de calidad a precios más económicos
-            y consume de manera responsable.
-          </p>
-        </div>
+              <h3>
+                {benefit.title}
+              </h3>
 
 
-        <div className="benefit-card">
-          <h3>🤝 Comunidad responsable</h3>
-          <p>
-            Conecta con personas que compran, venden y donan
-            para crear un impacto positivo.
-          </p>
-        </div>
+              <p>
+                {benefit.text}
+              </p>
+
+
+            </div>
+
+          ))
+        }
+
 
       </div>
 
+
     </section>
+
   );
+
 }
+
 
 export default Benefits;
