@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background: #faf8f5;
-  color: #2d2d2d;
-}
+@import "./styles/global.css";
+@import "./styles/navbar.css";
+@import "./styles/hero.css";
+@import "./styles/benefits.css";
+@import "./styles/categories.css";
+@import "./styles/catalog.css";
+@import "./styles/forms.css";
+@import "./styles/footer.css";
+@import "./styles/responsive.css";
 
 
 img {

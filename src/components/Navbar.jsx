@@ -2,23 +2,30 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 
-
 function Navbar() {
 
   const { cart } = useContext(CartContext);
 
-
   return (
-    <nav className="navbar">
 
+    <header className="navbar">
 
+      {/* LOGO */}
       <Link to="/" className="logo">
-        ♻️ ReVístete
+
+        <span className="logo-icon">
+          ♻️
+        </span>
+
+        <span className="logo-text">
+          ReVístete
+        </span>
+
       </Link>
 
 
-      <div className="nav-links">
-
+      {/* MENU */}
+      <nav className="nav-links">
 
         <Link to="/">
           Inicio
@@ -26,36 +33,51 @@ function Navbar() {
 
 
         <Link to="/catalogo">
-          Comprar 🛍️
+          Comprar
         </Link>
 
 
         <Link to="/donar">
-          Donar ♻️
+          Donar
         </Link>
 
 
         <Link to="/vender">
-          Vender 👕
+          Vender
         </Link>
 
 
         <Link to="/contacto">
-          Contacto 📩
+          Contacto
         </Link>
 
 
-        <Link to="/carrito">
-          🛒 Carrito ({cart.length})
+        {/* CARRITO */}
+        <Link 
+          to="/carrito" 
+          className="cart-link"
+        >
+
+          <span className="cart-icon">
+            🛒
+          </span>
+
+
+          <span className="cart-count">
+            {cart.length}
+          </span>
+
+
         </Link>
 
 
-      </div>
+      </nav>
 
 
-    </nav>
+    </header>
+
   );
-}
 
+}
 
 export default Navbar;

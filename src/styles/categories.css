@@ -1,0 +1,158 @@
+/* =========================
+        CATEGORIES
+========================= */
+
+
+.categories {
+
+  background: #faf5ff;
+
+  text-align: center;
+
+  padding: 90px 60px;
+
+}
+
+
+
+/* TITULO */
+
+.categories h2 {
+
+  font-size: 42px;
+
+  color: #3d195b;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* DESCRIPCIÓN */
+
+.categories-subtitle {
+
+  max-width: 700px;
+
+  margin: 0 auto;
+
+  color: #666;
+
+  font-size: 18px;
+
+}
+
+
+
+/* CONTENEDOR */
+
+.categories-container {
+
+  max-width: 1200px;
+
+  margin: 60px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 35px;
+
+}
+
+
+
+/* TARJETAS */
+
+.category-card {
+
+  background: white;
+
+  min-height: 260px;
+
+  padding: 35px 25px;
+
+  border-radius: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+
+  transition: .3s ease;
+
+  cursor: pointer;
+
+}
+
+
+
+/* EFECTO HOVER */
+
+.category-card:hover {
+
+  transform: translateY(-10px);
+
+  box-shadow: 0 20px 40px rgba(123,44,191,.15);
+
+}
+
+
+
+/* ICONO */
+
+.category-icon {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 90px;
+
+  height: 90px;
+
+  background: #fff7fc;
+
+  border-radius: 50%;
+
+  font-size: 50px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* TITULO */
+
+.category-card h3 {
+
+  color: #ff4d8d;
+
+  font-size: 24px;
+
+  margin-bottom: 12px;
+
+}
+
+
+
+/* TEXTO */
+
+.category-card p {
+
+  color: #666;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+}

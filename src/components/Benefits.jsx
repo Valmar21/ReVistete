@@ -3,20 +3,23 @@ function Benefits() {
   const benefits = [
     {
       icon: "♻️",
-      title: "Moda sostenible",
-      text: "Damos una segunda vida a las prendas, reduciendo residuos textiles y promoviendo un consumo más consciente."
+      title: "Moda con propósito",
+      description:
+        "Rescatamos prendas para darles una segunda vida, reduciendo el desperdicio textil y creando una forma más consciente de vestir."
     },
 
     {
       icon: "🌈",
       title: "Moda sin etiquetas",
-      text: "Creemos en una moda libre, inclusiva y creada para que cada persona pueda expresar su identidad."
+      description:
+        "Tu estilo no tiene límites. Creamos un espacio donde cada persona puede expresarse libremente a través de la ropa."
     },
 
     {
       icon: "🤝",
-      title: "Comunidad con propósito",
-      text: "Conectamos personas que compran, venden y donan ropa para generar un impacto positivo."
+      title: "Una comunidad que transforma",
+      description:
+        "Conectamos personas que compran, venden y donan para construir una moda más humana, inclusiva y sostenible."
     }
   ];
 
@@ -27,12 +30,13 @@ function Benefits() {
 
 
       <h2>
-        ¿Por qué elegir ReVístete? 🌈
+        ¿Por qué elegir ReVístete? 🌱✨
       </h2>
 
 
       <p className="benefits-subtitle">
-        Más que ropa, creamos nuevas historias para cada prenda.
+        No solo vendemos ropa, transformamos prendas en nuevas oportunidades.
+        Cada pieza tiene una historia y contigo empieza una nueva.
       </p>
 
 
@@ -43,14 +47,14 @@ function Benefits() {
         {
           benefits.map((benefit, index) => (
 
-            <div
+            <div 
               className="benefit-card"
               key={index}
             >
 
-             <div className="benefit-icon">
-  {benefit.icon}
-</div>
+              <span className="benefit-icon">
+                {benefit.icon}
+              </span>
 
 
               <h3>
@@ -59,7 +63,7 @@ function Benefits() {
 
 
               <p>
-                {benefit.text}
+                {benefit.description}
               </p>
 
 

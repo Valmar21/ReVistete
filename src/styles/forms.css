@@ -1,0 +1,39 @@
+.donate,
+.sell,
+.contact {
+
+  background: #faf5ff;
+
+  text-align: center;
+
+}
+
+
+input,
+textarea,
+select {
+
+  width: 100%;
+
+  padding: 15px;
+
+  border-radius: 15px;
+
+  border: 1px solid #ddd;
+
+}
+
+
+form {
+
+  max-width: 500px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+}

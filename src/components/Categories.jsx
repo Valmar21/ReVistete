@@ -1,37 +1,52 @@
 function Categories() {
 
+
   const categories = [
+
     {
-      name: "Camisas",
       icon: "👕",
-      description: "Básicas, vintage y estilos urbanos."
+      title: "Camisas",
+      description:
+        "Básicas, vintage y urbanas para crear looks únicos."
     },
+
     {
-      name: "Jeans",
       icon: "👖",
-      description: "Prendas clásicas con nueva historia."
+      title: "Jeans",
+      description:
+        "Clásicos que vuelven con una nueva oportunidad."
     },
+
     {
-      name: "Chaquetas",
       icon: "🧥",
-      description: "Estilo único para cada temporada."
+      title: "Chaquetas",
+      description:
+        "Piezas con carácter para destacar en cualquier temporada."
     },
+
     {
-      name: "Vestidos",
       icon: "👗",
-      description: "Diseños cómodos y sostenibles."
+      title: "Vestidos",
+      description:
+        "Diseños cómodos que combinan estilo y conciencia."
     },
+
     {
-      name: "Zapatos",
       icon: "👟",
-      description: "Calzado reutilizado en buen estado."
+      title: "Zapatos",
+      description:
+        "Calzado seleccionado para seguir caminando contigo."
     },
+
     {
-      name: "Accesorios",
       icon: "👜",
-      description: "Detalles que completan tu estilo."
+      title: "Accesorios",
+      description:
+        "Detalles que hacen grande tu estilo."
     }
+
   ];
+
 
 
   return (
@@ -40,12 +55,13 @@ function Categories() {
 
 
       <h2>
-        Explora nuestras categorías ✨
+        Explora tu próximo estilo ✨
       </h2>
 
 
       <p className="categories-subtitle">
-        Encuentra prendas únicas que cuentan una historia.
+        Encuentra prendas únicas, desde clásicos vintage
+        hasta piezas que reflejan tu personalidad.
       </p>
 
 
@@ -54,21 +70,21 @@ function Categories() {
 
 
         {
-          categories.map((category) => (
+          categories.map((category, index) => (
 
             <div
               className="category-card"
-              key={category.name}
+              key={index}
             >
 
 
-              <div className="category-icon">
-  {category.icon}
-</div>
+              <span className="category-icon">
+                {category.icon}
+              </span>
 
 
               <h3>
-                {category.name}
+                {category.title}
               </h3>
 
 
