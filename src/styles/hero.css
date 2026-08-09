@@ -11,20 +11,22 @@
   min-height: 80vh;
 
   background: linear-gradient(
+
     135deg,
+
     #fff0f6,
+
     #f3e8ff
+
   );
 
 }
-
 
 .hero-content {
 
   max-width: 600px;
 
 }
-
 
 .hero h1 {
 
@@ -34,7 +36,6 @@
 
 }
 
-
 .hero p {
 
   font-size: 19px;
@@ -42,7 +43,6 @@
   margin: 25px 0;
 
 }
-
 
 .hero-image img {
 
@@ -56,7 +56,6 @@
 
 }
 
-
 .hero-buttons {
 
   display: flex;
@@ -64,7 +63,6 @@
   gap: 15px;
 
 }
-
 
 .hero-button {
 
@@ -79,7 +77,6 @@
   font-weight: bold;
 
 }
-
 
 .hero-button.secondary {
 

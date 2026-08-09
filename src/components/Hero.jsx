@@ -1,91 +1,90 @@
 import { Link } from "react-router-dom";
 
-
 function Hero() {
 
-  return (
+return (
 
-    <section className="hero">
-
-
-      <div className="hero-content">
+<section className="hero">
 
 
-        <span className="hero-tag">
-          ♻️ Moda sostenible y consciente
-        </span>
+  <div className="hero-content">
 
 
-        <h1>
-          ReVístete:
-          <br />
-          moda con historia,
-          <br />
-          estilo con propósito 🌈
-        </h1>
+    <span className="hero-tag">
+      ♻️ Moda sostenible y consciente
+    </span>
 
 
-        <p>
-          Dale una segunda vida a tus prendas.
-          Compra, vende y dona ropa única mientras
-          construimos una moda más sostenible.
-        </p>
+    <h1>
+      ReVístete:
+      <br />
+      moda con historia,
+      <br />
+      estilo con propósito 🌈
+    </h1>
 
 
-
-        <div className="hero-buttons">
-
-
-          <Link
-            to="/catalogo"
-            className="hero-button"
-          >
-            🛍️ Explorar colección
-          </Link>
+    <p>
+      Dale una segunda vida a tus prendas.
+      Compra, vende y dona ropa única mientras
+      construimos una moda más sostenible.
+    </p>
 
 
 
-          <Link
-            to="/donar"
-            className="hero-button secondary"
-          >
-            ♻️ Donar prendas
-          </Link>
+    <div className="hero-buttons">
+
+
+      <Link
+        to="/catalogo"
+        className="hero-button"
+      >
+        🛍️ Explorar colección
+      </Link>
 
 
 
-          <Link
-            to="/vender"
-            className="hero-button secondary"
-          >
-            💰 Vender ropa
-          </Link>
-
-
-        </div>
-
-
-      </div>
+      <Link
+        to="/donar"
+        className="hero-button secondary"
+      >
+        ♻️ Donar prendas
+      </Link>
 
 
 
-      <div className="hero-image">
+      <Link
+        to="/vender"
+        className="hero-button secondary"
+      >
+        💰 Vender ropa
+      </Link>
 
 
-        <img
-          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
-          alt="Moda sostenible"
-        />
+    </div>
 
 
-      </div>
+  </div>
 
 
-    </section>
 
-  );
+  <div className="hero-image">
+
+
+    <img
+      src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
+      alt="Moda sostenible"
+    />
+
+
+  </div>
+
+
+</section>
+
+
+);
 
 }
-
 
 export default Hero;
